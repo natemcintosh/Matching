@@ -1,0 +1,8 @@
+name = "Matching"
+uuid = "c2a19e15-19d2-4052-9585-0e2a37fa53c3"
+authors = ["Nate McIntosh <40805156+natemcintosh@users.noreply.github.com>"]
+version = "0.1.0"
+
+[deps]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+UUIDs = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
