@@ -59,21 +59,6 @@ function add_list!(location::Location, list::Vector{Applicant})
 end
 
 """
-Where can this person fit in this locatoin's list? If they can't, -1
-Assumes `person` is in the desired list at all.
-"""
-function which_spot(person::Applicant, location::Location)::Tuple{Int}
-    # Get the ranks of people in `actual`
-    ranks_in_actual = sort([findfirst(==(id), location.desired) for id in location.actual])
-
-    # Where does this person rank in desired rankings?
-    person_rank = findfirst(==(person.id), location.desired)
-
-    # Find this person's spot w.r.t. the others already in `actual`
-    # curr_spot = 
-end
-
-"""
 Run the matching algorithm. The `actual` field of the locations will be filled.
 """
 function match(locations::Vector{Location}, applicants::Vector{Applicant})
